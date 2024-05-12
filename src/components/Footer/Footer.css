@@ -1,0 +1,59 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .waves {
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to right, #0000ff 0%, #0000ff 50%, transparent 50%);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    animation: wave-animation 2s infinite;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  .footer__text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icon {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icon__item {
+    margin: 0 5px;
+  }
+  
+  .social-icon__link {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .social-icon__link:hover {
+    color: #ccc;
+  }
