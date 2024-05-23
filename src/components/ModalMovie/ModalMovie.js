@@ -6,11 +6,18 @@ import Button from 'react-bootstrap/Button';
 import './ModalMovie.css'
 import Form from 'react-bootstrap/Form';
 
-function ModalMovie({ movie, isShown, handleClose, isFav ,refreshPage}) {
+function ModalMovie(
+    { movie,
+        isShown,
+        handleClose,
+        isFav,
+        refreshPage 
+    }) {
 
     const [isPosting, setIsPosting] = useState(false);
 
     async function addMovie(e) {
+        console.log(e);
         e.preventDefault();
         setIsPosting(true);
         const getUrl = "http://localhost:3005/getMovies";
@@ -70,7 +77,7 @@ function ModalMovie({ movie, isShown, handleClose, isFav ,refreshPage}) {
             <Modal.Body>
                 <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt="Movie Poster" />
                 <br />
-                <Form onSubmit={isFav?updateComment: addMovie}>
+                <Form onSubmit={isFav ? updateComment : addMovie}>
                     <Form.Group className="mb-3">
                         <Form.Label>Comment</Form.Label>
                         <Form.Control name="comment" type="text" placeholder="Enter comment" />

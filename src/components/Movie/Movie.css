@@ -38,10 +38,9 @@
 }
 
 .card button span {
-  color: #007bff;
+  color: #3597ff;
   text-decoration: underline;
   font-size: 14px;
-  transition: opacity 0.2s;
 }
 
 .card button:hover span {

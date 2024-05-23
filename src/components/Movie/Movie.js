@@ -14,9 +14,11 @@ function Movie({ movie, isFav, refreshPage }) {
   };
 
   const deleteFavMovie = async () => {
+
     const deleteUrl = `http://localhost:3005/DELETE/${movie.id}`;
     setIsDeleting(true);
     try {
+      console.log(deleteUrl);
       await axios.delete(deleteUrl);
       refreshPage(movie.id); 
       console.log("Movie deleted successfully");
