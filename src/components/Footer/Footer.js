@@ -8,7 +8,7 @@ function Footer() {
                 <div className="wave" id="wave2"></div>
                 <div className="wave" id="wave3"></div>
             </div>
-            <p className="footer__text">Yassin Al-Farwan</p>
+            <p className="footer__text">Yassin Al Farwan</p>
             <ul className="social-icon">
                 <li className="social-icon__item">
                     <a className="social-icon__link" href="https://github.com/Yassin-010">
